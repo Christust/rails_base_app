@@ -1,0 +1,11 @@
+<p>
+  <strong>Ingrediente:</strong>
+  <%= ingredient.name %>
+</p>
+
+ <p>
+  <%= link_to "Eliminar ingrediente", [ingredient.recipe, ingredient], data: {
+                turbo_method: :delete,
+                turbo_confirm: "Esta seguro?"
+              } %>
+</p>
